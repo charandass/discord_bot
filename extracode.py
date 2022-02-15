@@ -1,8 +1,10 @@
+
 # from discord.ext import commands
 # from discord import guild
 # from discord_slash import SlashCommand, SlashContext
 # from discord_slash.utils.manage_commands import create_choice, create_option
 
+# client = discord.Client()
 
 # client  = commands.Bot(command_prefix='!')
 # slash = SlashCommand(client, sync_commands=True)
@@ -24,3 +26,28 @@
 
 # async def _Hello(ctx:SlashContext,):
 #     await ctx.send("Hi there")
+
+
+
+
+
+# @client.event
+# async def on_ready():
+#   print('We have logged in as {0.user}'.format(client))
+
+
+# @client.event
+# async def on_message(message):
+#   if message.author == client.user:
+#     return
+
+#   msg = message.content
+
+#   if msg.startswith("$hi"):
+#     await message.channel.send("hello")
+  
+#   if msg.startswith("$TodaySales"):
+#     await message.channel.send(450000)
+
+#   if msg.startswith("$WeeklySales"):
+#     await message.channel.send(9800000)
